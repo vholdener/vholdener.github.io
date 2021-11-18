@@ -15,8 +15,8 @@ const bars = container
   .enter()
   .append('div')
   .classed('bar', true)
-  .style('width': '50px')
-  .style('height': '150px');
+  .style('width', '50px')
+  .style('height', '150px');
 
 //d3.select('div')
 //  .selectAll('p')

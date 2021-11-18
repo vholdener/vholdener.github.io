@@ -6,12 +6,25 @@ const COSMO_DATA = [
   { id: 5, temperatur: 20, sonne:1, niederschlag: 5, tag: 'freitag' }
 ]
 
-d3.select('div')
-  .selectAll('p')
+const container = d3.select('div')
+  .classed('container', true)
+  .style('border', '1px solid black');
+
+const bar = container
+  .selectAll('.bar')
   .data(COSMO_DATA)
   .enter()
-  .append('p')
-  .text(dta  => dta.tag);
+  .append('div')
+  .classed('bar', true)
+  .style('width': '50px')
+  .style('height': '150px');
+
+//d3.select('div')
+//  .selectAll('p')
+//  .data(COSMO_DATA)
+//  .enter()
+//  .append('p')
+//  .text(dta  => dta.tag);
 
 // d3.select('div')
 //   .selectAll('p')

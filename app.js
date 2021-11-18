@@ -10,7 +10,7 @@ const container = d3.select('div')
   .classed('container', true)
   .style('border', '1px solid black');
 
-const bar = container
+const bars = container
   .selectAll('.bar')
   .data(COSMO_DATA)
   .enter()

@@ -16,7 +16,8 @@ const yScale = d3
   .domain([0, 25])
   .range([250, 0]);
 
-const container = d3.select('svg')
+const container = d3
+  .select('svg')
   .classed('container', true);
 
 const bars = container

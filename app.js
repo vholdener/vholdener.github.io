@@ -6,8 +6,7 @@ const COSMO_DATA = [
 ]
 
 const container = d3.select('svg')
-  .classed('container', true)
-  .style('border', '1px solid black');
+  .classed('container', true);
 
 const bars = container
   .selectAll('.bar')

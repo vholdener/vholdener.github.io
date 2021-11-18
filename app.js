@@ -15,8 +15,10 @@ const bars = container
   .enter()
   .append('rect')
   .classed('bar', true)
-  .style('width', '50px')
-  .style('height', data => (data.temperatur * 10) + 'px');
+//  .style('width', '50px')
+//  .style('height', data => (data.temperatur * 10) + 'px');
+  .attr('width', 50)
+  .attr('height', data => (data.temperatur * 10));
 
 //d3.select('div')
 //  .selectAll('p')

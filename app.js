@@ -5,7 +5,7 @@ const COSMO_DATA = [
   { id: 4, temperatur: 18, sonne:9, niederschlag: 10, tag: 'donnerstag' },
 ]
 
-const container = d3.select('div')
+const container = d3.select('svg')
   .classed('container', true)
   .style('border', '1px solid black');
 
@@ -13,10 +13,10 @@ const bars = container
   .selectAll('.bar')
   .data(COSMO_DATA)
   .enter()
-  .append('div')
+  .append('rect')
   .classed('bar', true)
   .style('width', '50px')
-  .style('height', '150px');
+  .style('height', data => (data.temperatur * 10) + 'px');
 
 //d3.select('div')
 //  .selectAll('p')

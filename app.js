@@ -8,14 +8,14 @@ const COSMO_DATA = [
 
 d3.select('div')
   .selectAll('p')
-  .data([COSMO_DATA])
+  .data(COSMO_DATA)
   .enter()
   .append('p')
   .text(dta  => dta.tag);
 
 // d3.select('div')
 //   .selectAll('p')
-//   .data([COSMO_DATA])
+//   .data([1, 2, 3])
 //   .enter()
 //   .append('p')
-//   .text(dta  => dta.tag);
+//   .text(dta  => dta);

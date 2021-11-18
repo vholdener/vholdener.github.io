@@ -3,7 +3,6 @@ const COSMO_DATA = [
   { id: 2, temperatur: 16, sonne:4, niederschlag: 5, tag: 'dienstag' },
   { id: 3, temperatur: 10, sonne:8, niederschlag: 6, tag: 'mittwoch' },
   { id: 4, temperatur: 18, sonne:9, niederschlag: 10, tag: 'donnerstag' },
-  { id: 5, temperatur: 20, sonne:1, niederschlag: 5, tag: 'freitag' }
 ]
 
 const container = d3.select('div')

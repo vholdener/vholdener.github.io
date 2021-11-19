@@ -29,7 +29,7 @@ const bars = container
   .attr('width', xScale.bandwith())
   .attr('height', data => 250 - yScale(data.temperatur))
   .attr('x', data => xScale(data.station))
-  .attr('y', data => yScale(data.temperatur);
+  .attr('y', data => yScale(data.temperatur));
 
 //d3.select('div')
 //  .selectAll('p')

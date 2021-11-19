@@ -1,9 +1,9 @@
 const COSMO_DATA = [
-  { station: 1, temperatur: 18, sonne:2, niederschlag: 5, tag: 'montag' },
-  { station: 2, temperatur: 16, sonne:4, niederschlag: 5, tag: 'dienstag' },
-  { station: 3, temperatur: 10, sonne:8, niederschlag: 6, tag: 'mittwoch' },
-  { station: 4, temperatur: 18, sonne:9, niederschlag: 10, tag: 'donnerstag' },
-]
+  { station: 'zh', temperatur: 18, sonne:2, niederschlag: 5, tag: 'montag' },
+  { station: 'be', temperatur: 16, sonne:4, niederschlag: 5, tag: 'dienstag' },
+  { station: 'lu', temperatur: 10, sonne:8, niederschlag: 6, tag: 'mittwoch' },
+  { station: 'bs', temperatur: 18, sonne:9, niederschlag: 10, tag: 'donnerstag' },
+];
 
 const xScale = d3
   .scaleBand()

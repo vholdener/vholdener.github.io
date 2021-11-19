@@ -8,7 +8,7 @@ const COSMO_DATA = [
 const xScale = d3
   .scaleBand()
   .domain(COSMO_DATA.map((datapoint) => datapoint.station))
-  .rangeRound([0, 250])
+  .rangeRound([0, 200])
   .padding(0.1);
 
 const yScale = d3
